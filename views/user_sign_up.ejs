@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/css/layout.css">
+<h1 id="head">Sign Up</h1>
+<% if (flash) { %>
+
+    <div class="alert">
+
+        <%= flash.error %>
+
+     </div>
+<% } %>
+<form action="/users/create" method="POST">
+    <input type="text" name="name" id="name" placeholder="Your Name" required><br><br>
+    <input type="email" name="email" id="gmail" placeholder="Your Email" required><br><br>
+    <input type="password" name="password" id="key" placeholder="Password" required><br><br>
+    <input type="password" name="confirm_password" id="confirm-key" placeholder="Confirm Password" required><br><br>
+    <input type="submit" id="up" value="Sign Up">
+
+</form>

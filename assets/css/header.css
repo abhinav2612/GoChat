@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Playfair+Display:wght@500&family=Poppins&display=swap');
+
+#layout-header nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  padding: 0 10px;
+  background: #25D366;
+  color: white; }
+  #layout-header nav .mini-logo p {
+    margin: 5px;
+    font-size: 1.7rem;
+    font-weight: bold; }
+  #layout-header nav .auth-links ul {
+    margin: 5% 5px;
+    display: flex;
+    list-style: none; }
+    #layout-header nav .auth-links ul li {
+      margin-right: 10px; }
+  #layout-header nav a {
+    color: white;
+    text-decoration: none;
+font-weight:bold;	}

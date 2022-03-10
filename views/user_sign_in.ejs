@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="/css/home.css">
+<h1 id="head2">Sign In</h1>
+<% if (flash) { %>
+
+    <div class="alert">
+
+        <%= flash.error %>
+
+     </div>
+<% } %>
+<form action="/users/create-session" method="POST">
+    <input type="email" name="email" id="mail" placeholder="Email"  required><br><br>
+    <input type="password" id="pass" name="password" placeholder="Password"  required><br><br>
+    <input type="submit" id="sign" value="Sign In">
+
+</form>

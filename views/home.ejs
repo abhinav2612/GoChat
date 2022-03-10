@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/home.css">
+<link rel="stylesheet" href="/css/chat_box.css">
+
+<h1 id="heading" class="heading">Welcome to GoChat!</h1>
+<div id="start-chat">
+    <button id="name-btn" class="btn  btn-small mt-2">Let's Chat</button>
+</div>
+
+<div id="home-container">
+    <%- include('_chat_box') -%>
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+<script src="https://cdn.socket.io/4.4.1/socket.io.min.js" integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H" crossorigin="anonymous"></script>
+<script src="/js/chat_engine.js"></script>
+<% if (locals.user){ %>
+<script>
+    new ChatEngine('user-chat-box', '<%= locals.user.email %>')
+</script>
+<% } %>
